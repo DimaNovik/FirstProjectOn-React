@@ -1,0 +1,129 @@
+* {
+	margin:0;
+	padding: 0;
+}
+body {
+	background-color: #b3ffff;
+	position: relative;
+}
+
+h2 {
+	font-family: Verdana;
+	padding: 10px 10px;
+}
+
+span {
+	color: #ff6600;
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+}
+
+.build {
+	background-image: url("../img/build.png");
+	background-repeat: no-repeat;
+	background-size: 550px;
+	height: 600px;
+	width: 700px;
+	margin-top: 50px;
+	margin-left:50px;
+	position: relative;
+	z-index: 1;
+}
+
+.build img {
+	margin:340px 5px 0 350px;
+}
+
+.burger-left {
+	background-image: url("../img/burger-1.png");
+	background-repeat: no-repeat;
+	background-size: 150px;
+	width: 200px;
+	margin-left:50px;
+	animation-name: burgerFirst;
+	animation-duration: 2s ; 
+	animation-iteration-count: infinite;
+	position: relative;
+	z-index: 2;
+}
+
+.broccoli {
+	background-image: url("../img/broccoli.png");
+	background-repeat: no-repeat;
+	background-size: 150px;
+	width: 200px;
+	animation-name: broccoli;
+	animation-duration: 6s ; 
+	animation-iteration-count: infinite;
+	position: relative;
+	z-index: 3;
+}
+
+.burger-right {
+	background-image: url("../img/burger-2.png");
+	background-repeat: no-repeat;
+	background-size: 150px;
+	width: 300px;
+	animation-name: burgerSecond;
+	animation-duration: 4s ; 
+	animation-iteration-count: infinite;
+	position: relative;
+	z-index: 4;
+}
+
+.field {
+	width: 100%;
+	height: 600px;
+	background-color: #003300;
+	margin-top:-250px;	
+	opacity: 0.2;
+	position:fixed;
+}
+
+/*Animation for burgers*/
+
+@keyframes burgerFirst {
+	0%   {margin-top: 0px; }
+    10%  {margin-top: 40px; }
+    20%  {margin-top: 80px;}
+    30% {margin-top: 120px; }
+    40% {margin-top: 160px;}
+    50% {margin-top: 200px;}
+    60% {margin-top: 240px;}
+    70% {margin-top: 280px;}
+    80% {margin-top: 320px;}
+    90% {margin-top: 360px;}
+    100% {margin-top: 400px;}
+}
+
+@keyframes burgerSecond {
+	0%   {margin-top: 0px; }
+    10%  {margin-top: 40px; }
+    20%  {margin-top: 80px;}
+    30% {margin-top: 120px; }
+    40% {margin-top: 160px;}
+    50% {margin-top: 200px;}
+    60% {margin-top: 240px;}
+    70% {margin-top: 280px;}
+    80% {margin-top: 320px;}
+    90% {margin-top: 360px;}
+    100% {margin-top: 400px;}
+}
+
+
+@keyframes broccoli{
+	0%   {margin-top: 0px; }
+    10%  {margin-top: 40px; }
+    20%  {margin-top: 80px;}
+    30% {margin-top: 120px; }
+    40% {margin-top: 160px;}
+    50% {margin-top: 200px;}
+    60% {margin-top: 240px;}
+    70% {margin-top: 280px; }
+    80% {margin-top: 320px;}
+    90% {margin-top: 360px;}
+    100% {margin-top: 400px;}
+}
